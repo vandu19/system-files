@@ -1,0 +1,171 @@
+METHOD WITH RETURN TYPE
+--------------------------------------------
+-If we want we can define a method with any specific return type.
+for ex: public static int add()
+ {
+ //perform operation whatever we want//
+ return integertypevale;
+ }
+-Whenever we define a method with return type, we are telling that my method is going to return that particular type of
+data(value).
+-It is mandatory to write return statement if we have a method with specific return type.
+
+return keyword
+-------------------
+-It is used inside a method whenever we define a method with specific return type
+-return keywod is used to take data and exit from method
+-return keyword must be last stattement in a method
+-return keyword will not print the data.
+-we cannot write more than one retun statement in a method because after one return statement it exits from the method,
+so that the next return statement cannot be executed.
+Q. what is void ??
+A. no specific returntype or method is not writng any specific type of value.
+
+
+
+
+//method with returntype
+public class IntRegistration
+{
+ public static long phnofield()
+ {
+ return 9874561337l;
+ }
+ public static char genderfield()
+ {
+ return 'M';
+ }
+ public static void main(String args[])
+ {
+System.out.println(phnofield());
+System.out.println(genderfield());
+ }
+}
+
+
+
+
+1.Create an APP which includes the method as
+
+
+public class ArcusInfotechLogin
+{
+ public static boolean login(String username,int pwd)
+ {
+ if(username=="Arcus" && pwd==5454)
+ {
+ return true;
+ }
+ else
+ {
+ return false;
+ }}
+ public static void main(String args[])
+ {
+System.out.println(login("Arcus",5454));
+ System.out.println(login("Arcus",5354));
+ }
+ }
+note : execution will always start from main method
+
+
+2.WAP for area of tiangle ,rectangle and square
+class Areas
+{
+public static float areaOfTri(int breadth,int height)
+{
+float area1 = 0.5f * breadth * height;
+return area1;
+}
+public static float areaOfCircle(int radius)
+{
+float pie=3.141f;
+float area2 = pie * radius * radius;
+return area2;
+}
+public static int areaOfRect(int breadth,int length)
+{
+int area3 = length * breadth;
+return area3;
+}
+public static int areaOfSquare(int side)
+{
+int area4 = side * side;
+return area4;
+}
+public static void main(String args[])
+{
+ System.out.println("Areaof Triangle is : "+ areaOfTri(5,10));
+System.out.println("Areaof Circlee is : "+areaOfCircle(5));
+ System.out.println("Areaof Rectangle is : "+areaOfRect(3,8));
+ System.out.println("Areaof Square is : "+areaOfSquare(4));
+}
+}
+
+
+
+
+
+
+// WAP to print sum of even numbers 1234 (this logic can be used for any digit number)
+
+
+
+
+ public class SumE
+ {
+ public static void main(String args[])
+ {
+int num=1234,sum=0,rem;
+ while(num>0)
+{
+ rem=num%10;
+ num=num/10;
+ if(rem%2==0)
+ {
+ sum=sum+rem;
+ }
+ }
+ System.out.println("Sum of even numbers is : "+sum);
+ }
+ }
+
+
+
+
+
+// leap year
+
+main condition: The year should be dvisible by 4 
+another conditon: The leapyear shouldn't be a century year or should be divisible by 400. 
+
+
+
+public class LeapYear
+{
+ public static void main(String args[])
+ {
+ int year=2020;
+ if(year%4==0 && (year%100!=0 || year%400==0))
+ {
+ System.out.println("Leap Year");
+ }
+ else
+ {
+System.out.println("Not Leap Year");
+ }
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
